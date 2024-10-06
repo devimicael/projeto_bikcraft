@@ -50,7 +50,7 @@
   }
 
   .introducao-bg {
-    background: var(--cor);
+    background: var(--cor-11);
     padding-top: 40px;
     box-shadow: inset 0px -60px 0px 0px var(--cor-0);
   }
