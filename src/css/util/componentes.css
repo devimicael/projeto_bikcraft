@@ -70,3 +70,24 @@
 .btn-link:hover {
   color: var(--cor-0);
 }
+
+.pages-style {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.pages-style p {
+  margin-bottom: 4px;
+}
+
+@media(max-width: 800px){
+  .pages-style {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .pages-style p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
+  }
+}
