@@ -1,0 +1,42 @@
+.seguros-vatanges {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.seguros-vatanges h2 {
+  margin-bottom: 60px;
+}
+
+.seguros-vatanges ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px 80px;
+}
+
+.seguros-vatanges ul li {
+  display: grid;
+  align-content: start;
+  align-items: center;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+}
+
+.seguros-vatanges ul li h3 {
+  grid-column: 2;
+}
+
+.seguros-vatanges ul li p {
+  grid-column: 1/-1;
+}
+
+@media(max-width: 800px) {
+  .seguros-vatanges ul{
+    gap: 20px 40px;
+  }
+}
+
+@media(max-width: 600px) {
+  .seguros-vatanges ul {
+    gap: 30px;
+  }
+}
