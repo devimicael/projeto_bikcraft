@@ -1,0 +1,123 @@
+.bicicleta_ {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#bicicleta .max-container > p.c-5 {
+  text-transform: uppercase;
+}
+
+.bicicleta-img_ {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bicicleta-img_ img {
+  flex: 1;
+  min-width: 200px;
+}
+
+.bicicleta-img_ img:first-child {
+  min-width: 100%;
+}
+
+.bicicleta-conteudo_ > p {
+  margin-bottom: 32px;
+}
+
+.bicicleta-comprar_ {
+  display: grid;
+  grid-template-columns: max-content auto;
+  align-items: center;
+  justify-items: start;
+  gap: 8px 12px;
+}
+
+.bicicleta-comprar_ a {
+  grid-row: span 2;
+}
+
+.bicicleta-comprar_ span {
+  display: flex;
+  align-items: center;
+  background-color: var(--cor-12);
+  padding: 4px 8px;
+  border-radius: 4px;
+  gap: 8px;
+}
+
+.bicicleta-conteudo_ h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 12px;
+  margin-top: 32px;
+}
+
+.bicicleta-informacoes_,
+.bicicleta-ficha_ {
+  padding: 32px;
+  background-color: var(--cor-12);
+  border-radius: 4px;
+}
+
+.bicicleta-informacoes_ {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.bicicleta-informacoes_ li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 8px;
+}
+.bicicleta-informacoes_ li img {
+  max-width: 24px;
+}
+
+.bicicleta-informacoes_ li p {
+  grid-column: 1/-1;
+}
+
+.bicicleta-ficha_ li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--cor-10);
+}
+
+.bicicleta-ficha_ li + li {
+  margin-top: 8px;
+}
+
+.bicicleta-ficha_ li:last-child {
+  border-bottom: none;
+}
+
+.bicicleta-img_ span {
+  color:  var(--cor-6);
+}
+
+@media(max-width: 800px) {
+  .bicicleta_ {
+    grid-template-columns: 1fr;
+    padding-bottom: 40px;
+    padding-top: 0px;
+  }
+
+  .bicicleta-img_ {
+    grid-row: 2;
+  }
+}
+
+@media(max-width: 500px) {
+  .bicicleta-informacoes_ {
+    grid-template-columns: 1fr;
+  }
+}
