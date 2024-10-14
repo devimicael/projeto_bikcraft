@@ -74,6 +74,7 @@
 .pages-style {
   padding-top: 60px;
   padding-bottom: 60px;
+  background: var(--cor-11) url("../../img/dec/top-right.svg") no-repeat top 40px right 40px;
 }
 .pages-style p {
   margin-bottom: 4px;
