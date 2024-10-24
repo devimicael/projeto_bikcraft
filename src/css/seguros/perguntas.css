@@ -47,7 +47,7 @@
 }
 
 .perguntas button:hover::after,
-.perguntas button[aria-expanded="true"]::after {
+.js .perguntas button[aria-expanded="true"]::after {
   transform: rotate(180deg);
 }
 
@@ -60,7 +60,7 @@
   display: none;
 }
 
-.perguntas dd.ativo {
+.js .perguntas dd.ativo {
   display: block;
 
 }
